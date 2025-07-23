@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "daisyui";
+
+@theme {
+  --default-theme: night;
+}
 
 :root {
   --background: #ffffff;
