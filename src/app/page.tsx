@@ -12,20 +12,8 @@ export default function Home() {
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-purple-500/5 to-transparent"></div>
       {/* Navigation */}
-      <div className="navbar bg-base-100/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16"></path>
-              </svg>
-            </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#how-it-works">How It Works</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-          </div>
+      <nav className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/25">
               <span className="text-white font-bold text-xl">⚡</span>
@@ -44,17 +32,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li><a href="#features" className="hover:text-primary">Features</a></li>
-            <li><a href="#how-it-works" className="hover:text-primary">How It Works</a></li>
-            <li><a href="#testimonials" className="hover:text-primary">Testimonials</a></li>
-          </ul>
-        </div>
-        <div className="navbar-end">
-          <button className="btn btn-primary">Get Started</button>
-        </div>
-      </div>
+      </nav>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
@@ -128,7 +106,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Features Section */}
       <section id="features" className="bg-gradient-to-br from-gray-900 to-black py-20 relative">
@@ -247,7 +225,6 @@ export default function Home() {
                   <h4 className="font-semibold text-cyan-400">Sarah Johnson</h4>
                   <p className="text-gray-400 text-sm">🏆 Level 25 Fitness Warrior</p>
                 </div>
-                <p>"HabitPulse helped me build a consistent workout routine. The visual progress tracking keeps me motivated every day!"</p>
               </div>
               <p className="text-gray-300">"This game changed everything! I've maintained a 90-day workout streak and earned so many achievement badges. The XP system is addictive!"</p>
             </div>
@@ -259,7 +236,6 @@ export default function Home() {
                   <h4 className="font-semibold text-green-400">Mike Chen</h4>
                   <p className="text-gray-400 text-sm">⚔️ Level 18 Code Ninja</p>
                 </div>
-                <p>"The daily motivational quotes and streak tracking have completely changed how I approach personal development."</p>
               </div>
               <p className="text-gray-300">"The quest system and daily boss battles turned my boring routine into an epic adventure. I'm completely hooked!"</p>
             </div>
@@ -271,7 +247,6 @@ export default function Home() {
                   <h4 className="font-semibold text-purple-400">Emily Rodriguez</h4>
                   <p className="text-gray-400 text-sm">📚 Level 22 Knowledge Seeker</p>
                 </div>
-                <p>"Simple, beautiful, and effective. I've maintained my reading habit for 6 months straight thanks to this app!"</p>
               </div>
               <p className="text-gray-300">"Epic design and totally free! I've unlocked the 180-day reading streak achievement. This game makes learning addictive!"</p>
             </div>
@@ -298,12 +273,12 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-black via-gray-900 to-purple-900 text-white py-12 border-t border-purple-500/20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/25">
