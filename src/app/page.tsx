@@ -49,13 +49,19 @@ export default function Home() {
           🎮 Gamify your habits and unlock your potential! Earn XP, complete daily quests, and build streaks that level up your real life. 
           <span className="text-cyan-400 font-semibold">Join the early access beta</span> and start your epic journey today!
         </p>
+        <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 mb-6 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-300">
+            💻 <span className="text-cyan-400 font-semibold">Crafted by solo indie developer Jack Sighton</span> - 
+            Building epic habit-tracking experiences one feature at a time!
+          </p>
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-gradient-to-r from-cyan-500 via-purple-600 to-pink-500 text-white px-10 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-500/25 border border-purple-400/30">
             🚀 Start Playing FREE
           </button>
-          <button className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300 backdrop-blur-sm">
-            🎬 Watch Gameplay
-          </button>
+          <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300 backdrop-blur-sm inline-block text-center">
+            💬 Join Discord Community
+          </a>
         </div>
         
         {/* Hero Image/Mockup */}
@@ -268,9 +274,9 @@ export default function Home() {
             <button className="bg-white text-purple-600 px-10 py-4 rounded-xl text-xl font-black hover:scale-110 transition-all duration-300 shadow-2xl shadow-white/25 border-2 border-white">
               ⚡ JOIN THE BETA FREE
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300 backdrop-blur-sm">
-              🎬 Watch Epic Trailer
-            </button>
+            <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300 backdrop-blur-sm inline-block text-center">
+              💬 Join Discord Community
+            </a>
           </div>
         </div>
       </section>
@@ -313,15 +319,16 @@ export default function Home() {
             <div>
               <h3 className="font-semibold mb-4 text-pink-400">Join the Community</h3>
               <ul className="space-y-2 text-gray-400">
+                <li><a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">💬 Discord Community</a></li>
                 <li><a href="#" className="hover:text-pink-400 transition-colors">🐦 Twitter Guild</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">💼 LinkedIn Squad</a></li>
                 <li><a href="#" className="hover:text-pink-400 transition-colors">⚡ GitHub Repo</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-purple-500/20 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 HabitPulse. All rights reserved. <span className="text-green-400">Early Access Beta - Play Free!</span></p>
+            <p>&copy; 2024 HabitPulse by <span className="text-cyan-400 font-semibold">Jack Sighton</span> - Solo Indie Developer. <span className="text-green-400">Early Access Beta - Play Free!</span></p>
+            <p className="text-sm mt-2">💻 Crafted with passion by one developer, building epic habit experiences for the community!</p>
           </div>
         </div>
       </footer>
