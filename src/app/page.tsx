@@ -23,10 +23,13 @@ export default function Home() {
               Early Access
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Features</a>
-            <a href="#how-it-works" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium">How It Works</a>
-            <a href="#testimonials" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Testimonials</a>
+          <div className="hidden md:flex items-center space-x-4">
+            <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium flex items-center space-x-2">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              <span>Discord</span>
+            </a>
             <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-purple-500/25 font-semibold">
               Play Free
             </button>
@@ -47,20 +50,18 @@ export default function Home() {
         </div>
         <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
           🎮 Gamify your habits and unlock your potential! Earn XP, complete daily quests, and build streaks that level up your real life. 
-          <span className="text-cyan-400 font-semibold">Join the early access beta</span> and start your epic journey today!
+          <span className="text-cyan-400 font-semibold"> Join the early access beta</span> and start your epic journey today!
         </p>
-        <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 mb-6 max-w-2xl mx-auto">
-          <p className="text-sm text-gray-300">
-            💻 <span className="text-cyan-400 font-semibold">Crafted by solo indie developer Jack Sighton</span> - 
-            Building epic habit-tracking experiences one feature at a time!
-          </p>
-        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-gradient-to-r from-cyan-500 via-purple-600 to-pink-500 text-white px-10 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-500/25 border border-purple-400/30">
             🚀 Start Playing FREE
           </button>
-          <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300 backdrop-blur-sm inline-block text-center">
-            💬 Join Discord Community
+          <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300 backdrop-blur-sm inline-block text-center flex items-center justify-center space-x-2">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            <span>Discord</span>
           </a>
         </div>
         
@@ -274,8 +275,11 @@ export default function Home() {
             <button className="bg-white text-purple-600 px-10 py-4 rounded-xl text-xl font-black hover:scale-110 transition-all duration-300 shadow-2xl shadow-white/25 border-2 border-white">
               ⚡ JOIN THE BETA FREE
             </button>
-            <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300 backdrop-blur-sm inline-block text-center">
-              💬 Join Discord Community
+            <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300 backdrop-blur-sm inline-block text-center flex items-center justify-center space-x-2">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              <span>Discord</span>
             </a>
           </div>
         </div>
@@ -284,7 +288,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gradient-to-br from-black via-gray-900 to-purple-900 text-white py-12 border-t border-purple-500/20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/25">
@@ -295,34 +299,32 @@ export default function Home() {
                   Beta
                 </div>
               </div>
-              <p className="text-gray-400">Level up your life, one epic quest at a time. <span className="text-green-400 font-semibold">100% Free Early Access!</span></p>
+              <p className="text-gray-400 mb-4">Level up your life, one epic quest at a time. <span className="text-green-400 font-semibold">100% Free Early Access!</span></p>
+              
+              <div className="flex items-center space-x-4">
+                <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                  </svg>
+                  <span>Discord</span>
+                </a>
+              </div>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-cyan-400">Game Features</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">🎮 Epic Features</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">🆓 Free Beta Access</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">🚀 Latest Updates</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4 text-purple-400">Player Support</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-purple-400 transition-colors">🛡️ Help Center</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">💬 Contact Guild</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">🔒 Privacy Shield</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4 text-pink-400">Join the Community</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">💬 Discord Community</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">🐦 Twitter Guild</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">⚡ GitHub Repo</a></li>
-              </ul>
+              <h3 className="font-semibold mb-4 text-cyan-400">About the Developer</h3>
+              <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4">
+                <p className="text-gray-300 mb-3">
+                  💻 <span className="text-cyan-400 font-semibold">Jack Sighton</span> - Solo Indie Developer
+                </p>
+                <p className="text-sm text-gray-400">
+                  Crafting epic habit-tracking experiences with passion and dedication. 
+                  Building HabitPulse one feature at a time to help people level up their lives through gamification.
+                </p>
+                <p className="text-xs text-gray-500 mt-2">
+                  🎮 Turning daily habits into epic adventures since 2024
+                </p>
+              </div>
             </div>
           </div>
           
