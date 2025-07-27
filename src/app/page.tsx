@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -233,7 +232,7 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">🏆 Level 25 Fitness Warrior</p>
                 </div>
               </div>
-              <p className="text-gray-300">"This game changed everything! I've maintained a 90-day workout streak and earned so many achievement badges. The XP system is addictive!"</p>
+              <p className="text-gray-300">&ldquo;This game changed everything! I&apos;ve maintained a 90-day workout streak and earned so many achievement badges. The XP system is addictive!&rdquo;</p>
             </div>
             
             <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-6 rounded-xl border border-green-400/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
@@ -244,7 +243,7 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">⚔️ Level 18 Code Ninja</p>
                 </div>
               </div>
-              <p className="text-gray-300">"The quest system and daily boss battles turned my boring routine into an epic adventure. I'm completely hooked!"</p>
+              <p className="text-gray-300">&ldquo;The quest system and daily boss battles turned my boring routine into an epic adventure. I&apos;m completely hooked!&rdquo;</p>
             </div>
             
             <div className="bg-gradient-to-br from-purple-500/10 to-pink-600/10 p-6 rounded-xl border border-purple-400/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
@@ -255,7 +254,7 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">📚 Level 22 Knowledge Seeker</p>
                 </div>
               </div>
-              <p className="text-gray-300">"Epic design and totally free! I've unlocked the 180-day reading streak achievement. This game makes learning addictive!"</p>
+              <p className="text-gray-300">&ldquo;Epic design and totally free! I&apos;ve unlocked the 180-day reading streak achievement. This game makes learning addictive!&rdquo;</p>
             </div>
           </div>
         </div>
