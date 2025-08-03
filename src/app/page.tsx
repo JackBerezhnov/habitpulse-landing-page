@@ -212,54 +212,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-900 to-black relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-transparent"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-              🎆 Player Reviews
-            </h2>
-            <p className="text-xl text-gray-300">Join thousands of players who have leveled up their lives - <span className="text-green-400 font-semibold">all playing for FREE!</span></p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold shadow-lg shadow-cyan-400/25">S</div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-cyan-400">Sarah Johnson</h4>
-                  <p className="text-gray-400 text-sm">🏆 Level 25 Fitness Warrior</p>
-                </div>
-              </div>
-              <p className="text-gray-300">&ldquo;This game changed everything! I&apos;ve maintained a 90-day workout streak and earned so many achievement badges. The XP system is addictive!&rdquo;</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-6 rounded-xl border border-green-400/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white font-semibold shadow-lg shadow-green-400/25">M</div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-green-400">Mike Chen</h4>
-                  <p className="text-gray-400 text-sm">⚔️ Level 18 Code Ninja</p>
-                </div>
-              </div>
-              <p className="text-gray-300">&ldquo;The quest system and daily boss battles turned my boring routine into an epic adventure. I&apos;m completely hooked!&rdquo;</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-purple-500/10 to-pink-600/10 p-6 rounded-xl border border-purple-400/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold shadow-lg shadow-purple-400/25">E</div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-purple-400">Emily Rodriguez</h4>
-                  <p className="text-gray-400 text-sm">📚 Level 22 Knowledge Seeker</p>
-                </div>
-              </div>
-              <p className="text-gray-300">&ldquo;Epic design and totally free! I&apos;ve unlocked the 180-day reading streak achievement. This game makes learning addictive!&rdquo;</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
