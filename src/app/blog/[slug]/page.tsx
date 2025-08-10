@@ -327,11 +327,12 @@ Ready to break free from bad habits? Start tracking your progress with HabitPuls
 };
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = blogPosts[params.slug as keyof typeof blogPosts];
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
   
   if (!post) {
     return {
@@ -359,8 +360,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({ params }: Props) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts];
+export default async function BlogPost({ params }: Props) {
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
     notFound();
