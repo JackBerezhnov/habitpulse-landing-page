@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="/blog" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium">
+            <a href="https://www.habit-pulse.com/blog" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium">
               Blog
             </a>
             <a href="https://discord.gg/SDjprAkATd" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors font-medium flex items-center space-x-2">
