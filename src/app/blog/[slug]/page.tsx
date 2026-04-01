@@ -4,6 +4,149 @@ import { notFound } from "next/navigation";
 
 // Sample blog posts data - in a real app, this would come from a CMS or database
 const blogPosts = {
+  "introducing-idle-battle-system": {
+    title: "Introducing the Idle Battle System in HabitPulse",
+    excerpt: "Turn your real-life habits into progress, rewards, and victories with HabitPulse's brand-new Idle Battle System.",
+    content: `
+# Introducing the Idle Battle System in HabitPulse
+
+**Turn your real-life habits into progress, rewards, and victories**
+
+## Level Up Your Life — Even When You're Not Active
+
+One of the biggest challenges with habit tracking apps is simple:
+they become repetitive… and eventually boring.
+
+That's exactly what we wanted to fix.
+
+Today, we're introducing a brand-new feature in HabitPulse:
+👉 **The Idle Battle System**
+
+A system designed to make your habits feel meaningful, rewarding, and—most importantly—fun.
+
+## ⚔️ What Is the Idle Battle System?
+
+The Idle Battle System transforms your habit progress into a game-like experience.
+
+Instead of just checking off tasks, you now:
+
+- Fight enemies automatically
+- Earn gold while progressing
+- Level up your character
+- Watch your habits turn into real in-game power
+
+Even when you're not actively playing, your progress continues.
+
+## 🎮 How It Works
+
+Here's the core idea:
+
+### 1. Your Habits Power Your Character
+
+Every completed habit contributes to your stats:
+
+- Damage ⚔️
+- Speed ⏱️
+- Critical chance 💥
+
+The more consistent you are in real life, the stronger you become in the game.
+
+### 2. Battles Run Automatically (Idle System)
+
+Once you enter a battle:
+
+- Your character attacks automatically
+- Enemies lose HP over time
+- You earn gold as you defeat them
+
+No constant tapping. No grinding.
+Just progress powered by your habits.
+
+### 3. Earn Gold & Track Progress
+
+As you play, you'll see:
+
+- 💰 Gold earned
+- 🧟 Enemies defeated
+- ⚡ DPS (damage per second)
+
+This creates a feedback loop that keeps you engaged without overwhelming you.
+
+### 4. Face Stronger Enemies
+
+Each enemy gets tougher:
+
+- Higher HP
+- Higher levels
+- Slower progression if you're inconsistent
+
+This naturally pushes you to stay consistent in real life.
+
+## 🧠 Why We Built This
+
+Most habit apps fail because:
+
+- They rely on motivation (which fades)
+- They feel like chores
+- They lack emotional reward
+
+We wanted HabitPulse to feel:
+
+- Engaging
+- Rewarding
+- Addictive (in a healthy way)
+
+By combining habit tracking with idle game mechanics, we created something that:
+👉 rewards consistency
+👉 visualizes progress
+👉 keeps users coming back
+
+## 🔥 What Makes This Different?
+
+Unlike traditional idle games:
+
+- **HabitPulse**: Progress tied to real-life habits — encourages self-improvement and builds discipline
+- **Traditional Idle Games**: Progress tied to grinding — encourages passive play and builds dependency
+
+You're not just playing a game.
+You're improving your life.
+
+## 🛠️ What's Coming Next
+
+This is just the beginning.
+
+We're already working on:
+
+- 🧙‍♂️ Character upgrades & skill trees
+- 🛡️ Equipment & loot system
+- 👹 Boss battles
+- 🏆 Achievements & milestones
+- 🌍 Social & leaderboard features
+
+## 💡 Final Thoughts
+
+HabitPulse is evolving into more than just a habit tracker.
+
+It's becoming:
+👉 A system
+👉 A game
+👉 A personal growth engine
+
+And the Idle Battle System is the first step toward that vision.
+
+## 🚀 Try It Now
+
+Start building habits that actually feel rewarding.
+
+👉 [Launch HabitPulse](https://app.habit-pulse.com/login)
+👉 Complete your habits
+👉 Watch your character grow
+    `,
+    publishedAt: "2026-03-31",
+    readTime: "7 min read",
+    category: "Feature",
+    author: "Jack Sighton",
+  },
   "the-science-of-habit-formation": {
     title: "The Science of Habit Formation: How to Build Lasting Changes",
     excerpt: "Discover the neuroscience behind habit formation and learn evidence-based strategies to create habits that stick for life.",
@@ -369,21 +512,27 @@ export default async function BlogPost({ params }: Props) {
   }
 
   const formatContent = (content: string) => {
+    const parseInline = (text: string) => {
+      return text
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-purple-300 hover:text-purple-200 underline">$1</a>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    };
+
     return content
       .split('\n')
       .map(line => {
         if (line.startsWith('# ')) {
-          return `<h1 class="text-3xl font-bold text-white mb-6 mt-8">${line.slice(2)}</h1>`;
+          return `<h1 class="text-3xl font-bold text-white mb-6 mt-8">${parseInline(line.slice(2))}</h1>`;
         } else if (line.startsWith('## ')) {
-          return `<h2 class="text-2xl font-bold text-purple-300 mb-4 mt-8">${line.slice(3)}</h2>`;
+          return `<h2 class="text-2xl font-bold text-purple-300 mb-4 mt-8">${parseInline(line.slice(3))}</h2>`;
         } else if (line.startsWith('### ')) {
-          return `<h3 class="text-xl font-bold text-purple-200 mb-3 mt-6">${line.slice(4)}</h3>`;
+          return `<h3 class="text-xl font-bold text-purple-200 mb-3 mt-6">${parseInline(line.slice(4))}</h3>`;
         } else if (line.trim() === '') {
           return '<br>';
         } else if (line.startsWith('- ')) {
-          return `<li class="text-white/90 mb-2">${line.slice(2)}</li>`;
+          return `<li class="text-white/90 mb-2">${parseInline(line.slice(2))}</li>`;
         } else {
-          return `<p class="text-white/90 leading-relaxed mb-4">${line}</p>`;
+          return `<p class="text-white/90 leading-relaxed mb-4">${parseInline(line)}</p>`;
         }
       })
       .join('');

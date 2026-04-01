@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 // Sample blog posts data - in a real app, this would come from a CMS or database
 const blogPosts = [
   {
+    slug: "introducing-idle-battle-system",
+    title: "Introducing the Idle Battle System in HabitPulse",
+    excerpt: "Turn your real-life habits into progress, rewards, and victories with HabitPulse's brand-new Idle Battle System.",
+    publishedAt: "2026-03-31",
+    readTime: "7 min read",
+    category: "Feature",
+    featured: true,
+  },
+  {
     slug: "the-science-of-habit-formation",
     title: "The Science of Habit Formation: How to Build Lasting Changes",
     excerpt: "Discover the neuroscience behind habit formation and learn evidence-based strategies to create habits that stick for life.",
