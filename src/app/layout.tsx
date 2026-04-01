@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HabitPulse - Transform Your Life One Habit at a Time",
   description: "Build lasting habits with HabitPulse. Track progress, set goals, get motivated, and transform your life with our comprehensive habit tracking app.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
